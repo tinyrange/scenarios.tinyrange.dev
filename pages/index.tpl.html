@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/app.css" />
+    <title>TinyRange Scenarios</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">TinyRange Scenarios (Beta)</a></h1>
+    </header>
+    <article>
+      <h2>About</h2>
+      <p>
+        TinyRange is a lightweight Cyber Range designed to run ready-to-go cyber
+        security scenarios on a wide range of computer systems. These scenarios
+        come in the form of Starlark scripts.
+      </p>
+
+      <p>
+        TinyRange has been developed at The University of Queensland within
+        <a href="https://cyber.uq.edu.au">UQ Cyber</a> by
+        <a href="mailto:j.scarsbrook@uq.edu.au">Joshua D. Scarsbrook</a>. The
+        runtime is not currently publicly available but we are intending to
+        release it shortly.
+      </p>
+
+      <p>
+        This website hosts a variety of scenarios covering different skills and
+        TinyRange features.
+      </p>
+
+      <h2>Scenario a Day</h2>
+
+      <p>
+        Scenario a Day is about writing a scenario a day to teach Cyber Security
+        skills and learn about building scenarios in TinyRange.
+      </p>
+
+      {{ range .Scenarios }}
+      <div class="scenario">
+        <h3>
+          {{ .Date }} - <a href="{{ .Url }}">{{ .Title }}</a> {{ range .Tags }}
+          <small><span class="tag">{{ . }}</span></small> {{ end }}
+          <small>{{ .Description }}</small>
+        </h3>
+      </div>
+      {{ end }}
+    </article>
+
+    <footer>TinyRange</footer>
+  </body>
+</html>

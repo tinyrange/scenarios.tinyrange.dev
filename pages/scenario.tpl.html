@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/app.css" />
+    <title>TinyRange Scenarios - {{ .Title }}</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">TinyRange Scenarios (Beta)</a></h1>
+    </header>
+    <article>
+      <h2>{{ .Date }} - {{ .Title }}</h2>
+
+      <h2>
+        {{ range .Tags }} <small><span class="tag">{{ . }}</span></small> {{ end
+        }}
+        <small><i>{{ .Description }}</i></small>
+      </h2>
+
+      <div class="code">{{ .FormattedCode }}</div>
+
+      {{ .Content }}
+    </article>
+    <footer>TinyRange</footer>
+  </body>
+</html>
