@@ -267,6 +267,11 @@ func main() {
 	flag.Parse()
 
 	if *build {
+		err := os.MkdirAll(filepath.Join(*output), os.ModePerm)
+		if err != nil {
+			log.Fatal(err)
+		}
+
 		scenarios, err := buildScenarioADay("scenarioADay")
 		if err != nil {
 			log.Fatal(err)
