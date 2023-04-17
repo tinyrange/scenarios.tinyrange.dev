@@ -1,8 +1,3 @@
-"""
-Testing Lesson for TinyRange
-Joshua D. Scarsbrook - The University of Queensland
-"""
-
 vm1 = main.add_vm(
     "lesson_vm",
     init_script = """
