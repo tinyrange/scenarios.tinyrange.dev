@@ -2,7 +2,7 @@
 title: "Hide and Seak: Welcome to the Shell"
 description: Learn to navigate though the Linux shell.
 date: 17/04/2023
-url: /scenarioaday/2023/04/17/shell_games.html
+url: /scenarios/2023/04/17/shell_games.html
 tags:
   - Shell
   - Linux

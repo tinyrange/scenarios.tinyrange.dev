@@ -2,7 +2,7 @@
 title: "Running Python inside TinyRange"
 description: Simple example of running Python in TinyRange.
 date: 19/04/2023
-url: /scenarioaday/2023/04/19/hello_python.html
+url: /scenarios/2023/04/19/hello_python.html
 tags:
   - Python
   - Linux

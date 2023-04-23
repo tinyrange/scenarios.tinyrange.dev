@@ -2,7 +2,7 @@
 title: Welcome to Scenario a Day
 description: Writing a Scenario a Day to teach Cyber Security and learn about TinyRange.
 date: 16/04/2023
-url: /scenarioaday/2023/04/16/hello.html
+url: /scenarios/2023/04/16/hello.html
 tags:
   - Programming
   - TinyRange
